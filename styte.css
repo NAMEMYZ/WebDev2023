@@ -8,6 +8,9 @@
     height: 256px;
     overflow: hidden;
     text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
   }
 .Skill{
     border: dashed rgb(106, 95, 0)
@@ -22,10 +25,10 @@ body {
     font-family: 'sans-serif';
 }
 hr {
-    background-color: white;
-    border-style: dotted;
-    height: 5px;
-    color:#000000;
-    border-width: 5px;
-  }
+    border-style: none; 
+    border-top-style: dotted;
+    border-color: grey;
+    border-width:5px;
+    width: 30%;
+}
   
