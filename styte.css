@@ -18,3 +18,14 @@ img{
     overflow: hidden;
     text-align: center;
 }
+body {
+    font-family: 'sans-serif';
+}
+hr {
+    background-color: white;
+    border-style: dotted;
+    height: 5px;
+    color:#000000;
+    border-width: 5px;
+  }
+  
