@@ -1,0 +1,55 @@
+.WorkEXHead {
+    background-color: rgb(106, 95, 0);
+    color: rgb(255, 255, 255);
+}
+.Profile {
+    border-radius: 50%;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+  }
+.Skill{
+    border: dashed rgb(106, 95, 0)
+}
+img{
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    text-align: center;
+}
+body {
+    font-family: 'sans-serif';
+    background-color: #82A0D8;
+    margin: 0;
+}
+hr {
+    border-style: none; 
+    border-top-style: dotted;
+    border-color: rgb(0, 0, 0);
+    border-width:5px;
+    width: 30%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.header{
+    background-color: #8DDFCB;
+}
+.middle{
+    background-color: #ECEE81;
+}
+.footer{
+    background-color: #EDB7ED;
+}
+h3{
+    margin: 0;
+}
+ul{
+    margin: 0;
+}
+ol{
+    margin: 0;
+}
