@@ -1,0 +1,197 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles */
+body {
+    font-family: monospace;
+
+}
+.bar{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+}
+.container {
+    max-width: 855px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+}
+em{
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.profile-picture {
+    border-radius: 50%;
+    max-width: 256px;
+    margin-top: 80px;
+}
+p{
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+/* Navigation styles */
+nav {
+    position: fixed; /* กำหนดให้แถบนำติดตรงด้านบน */
+    top: 0; /* ตำแหน่งด้านบนของหน้าเว็บ */
+    left: 0; /* ตำแหน่งด้านซ้ายของหน้าเว็บ */
+    width: 100%; /* ความกว้างเต็มหน้าเว็บ */
+    background-color: #333; /* สีพื้นหลังของแถบนำ */
+    z-index: 100; /* กำหนดให้แถบนำอยู่บนสุด */
+}
+
+/* CSS เพื่อสไตล์ของรายการเมนู */
+nav ul {
+    list-style: none; /* ลบสัญลักษณ์ลิสต์ */
+    padding: 0; /* ลบระยะห่างภายในของลิสต์ */
+    margin: 0; /* ลบระยะขอบของลิสต์ */
+    display: flex; /* แสดงรายการเมนูในลักษณะแนวนอน */
+    justify-content: space-around; /* จัดการตำแหน่งของรายการเมนู */
+    align-items: center; /* จัดตำแหน่งรายการเมนูให้ตรงกลางในแนวดิ่ง */
+}
+
+/* CSS เพื่อสไตล์ของลิงก์เมนู */
+nav a {
+    text-decoration: none; /* ไม่มีการเพิ่มเส้นใต้งานลิงก์ */
+    color: #fff; /* สีข้อความลิงก์ */
+    padding: 10px 20px; /* ระยะห่างขอบของลิงก์ */
+    border-radius: 5px; /* การกลมมุมของลิงก์ */
+    transition: background-color 0.3s ease; /* เพิ่ม transition property สำหรับ background-color */
+}
+
+/* CSS เพิ่ม transition effect เมื่อโฮเวอร์ลิงก์ในแถบนำ */
+nav a:hover {
+    background-color: #555; /* สีพื้นหลังเมื่อโฮเวอร์ลิงก์ */
+}
+/* Section styles */
+section {
+    padding-top: 80px; /* ปรับค่าตามความเหมาะสม */
+    transition: padding-top 0.3s ease; /* เพิ่ม transition property สำหรับ padding-top */
+}
+h1 {
+    
+    margin: 10px;
+    font-family: 'Mitr', sans-serif;
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+.footer-link{
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1em;
+}
+span{
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+li{
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+section {
+    padding-top: 80px; /* ปรับค่าตามความเหมาะสม */
+}
+.header-link{
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.skill-row{
+    margin: 100px auto;
+    text-align: center;
+}
+.java{
+    width:15%;
+
+}
+.C{
+    width:25%;
+}
+.Python{
+    width:25%;
+}   
+.node{
+    width:25%;
+}
+.React.js{
+    width:25%;
+}
+h3{
+    font-size: 2em;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+/* CSS สำหรับปุ่ม Hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+}
