@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#employment">Employment History</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <header>
-        <div class="container">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NAMEMYZ.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Resume</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About Me</a>
+                      <a class="nav-link" href="#education">Education</a>
+                      <a class="nav-link" href="#employment">Employment History</a>
+                      <a class="nav-link" href="#skills">Skills</a>
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+        <div class="container-header">
             <img src="https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-6/377988280_1424695624758474_1878914229595005041_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGGidtuzVgv4w02W5KweyUHUh98Jr6iVuxSH3wmvqJW7M-nVoSO729T3CDDJXM9lzvKZ-a9ZrkgMxL4dW_NxcCO&_nc_ohc=kYBXzEs5PXMAX8KiIcx&_nc_ht=scontent.fbkk29-5.fna&oh=00_AfDkGeBR1JPfAgdcPVlr2wL9AdR-3vId4U9zxffZxZanwA&oe=6516CE3E" alt="Profile Picture" class="profile-picture">
             <h1>Chawanakorn Sangsavang</h1>
             <em>Computer Engineering and Artificial Intelligence</em>
             <br><em>Faculty of Engineering and Technology</em>
             <br><a class="header-link" href="http://pim.ac.th">Panyapiwat Institute of Management</a>
         </div>
-    </header>
+    
     
     <section id="about">
         <hr>
@@ -130,13 +141,12 @@
         <hr>
         <div class="container">
             <h2>Contact</h2>
-            <ol>
-                <li>Email: chawanakornname@gmail.com</li>
-                <li>Phone: 0972696757</li>
-                <li>Address: 223/283 Nonthaburi Pakkhed</li>
-                <li>Facebook: <a class="footer-link" href="https://www.facebook.com/namemy.sosad/">Chawanakorn Sangsavang</a></li>
-                <li>Instagram: <a class="footer-link" href="https://www.instagram.com/_namemyz_/">_namemyz_</a></li>
-            </ol>
+            <div class="container-contract">
+                <em>Email: chawanakornname@gmail.com</em><br>
+                <em>Phone: 0972696757</em><br>
+                <em>Address: 223/283 Nonthaburi Pakkhed</em><br>
+                <em>Facebook: <a class="footer-link" href="https://www.facebook.com/namemy.sosad/">Chawanakorn Sangsavang</a></em><br>
+                <em>Instagram: <a class="footer-link" href="https://www.instagram.com/_namemyz_/">_namemyz_</a></em>
         </div>
     </section>
     <hr>
@@ -145,6 +155,8 @@
             <p>&copy; 2023 Chawanakorn Sangsavang</p>
         </div>
     </footer>
+    <script src="bootstrap.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
